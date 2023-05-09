@@ -37,9 +37,33 @@ p {
   line-height: 1.5;
   text-align: left;
 }
-
-.app-name {
-  text-align: left;
+@media (max-width: 576px) {
+  .responsive-h1 {
+    font-size: 42px;
+  }
+  .responsive-h2 {
+    font-size: 32px;
+    display: block;
+    text-align: center;
+  }
+  .responsive-h3 {
+    font-size: 24px;
+  }
+  .responsive-p {
+    text-align: center;
+  }
+  .responsive-button {
+    margin: 20px 100px;
+    border-radius: 4px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) {
+  .app-name {
+    text-align: left;
+  }
 }
 .nocolor-bg {
   background: white;
